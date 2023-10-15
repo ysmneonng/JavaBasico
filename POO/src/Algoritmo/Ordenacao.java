@@ -2,7 +2,7 @@ package Algoritmo;
 
 import java.util.Arrays;
 
-public class ordenacao {
+public class Ordenacao {
     public static void main(String[] args) {
         int[] numbers = new int[]{10, 30, 4, 3, 5, 1, 2, 3, 10};
         Arrays.sort(numbers);
