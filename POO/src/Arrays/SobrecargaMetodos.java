@@ -23,7 +23,7 @@ public class SobrecargaMetodos {
         System.out.println(userX.output(false));
 
         //TO STRING
-        //todo objeto criado tem um metodo oculto
+        //Td objeto criado tem um metodo oculto
         //imprimrindo o tostring imprime o nome da classe e o hashcode
         System.out.println(userX.toString());
         //se eu quiser formatar isso, posso reescrever esse metodo la no user.

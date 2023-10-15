@@ -49,7 +49,7 @@ public class User {
     }
 
     //STATIC -> pertence a classe e nao a um objeto isolado
-    //metodos estaticos podem chamar metodos estaticos
+    //metodos estaticos podem chamar metodos
     //this. se refere a um objeto vivo e dinamico
     public void setCount(int count) {
         this.count = this.count + count;
