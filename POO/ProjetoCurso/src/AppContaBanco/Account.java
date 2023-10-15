@@ -47,9 +47,13 @@ public class Account {
         }
     }
 
+    public double getBalance() {
+        return balance;
+    }
+
     //EXTRATO
     @Override
     public String toString() {
-        return "A conta " + this.name + " " + this.ag + " / " + this.cc + "possui: R$: " + balance;
+        return "A conta " + this.name + " " + this.ag + " | " + this.cc + " possui saldo de: R$: " + balance;
     }
 }

@@ -1,5 +1,6 @@
 package AppContaBanco;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class App {
@@ -7,7 +8,36 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Account account = new Account("0001", "101510","Yasmine Oenning");
+        Bank YasmineBank = new Bank("0013");
+        //C - Criar conta, E - Sair
+        while (true){
+            System.out.println("Digite o código da operação desejada: " +
+                    "| C = Criar Conta" +
+                    " | E = Sair ");
+            String operation = scanner.nextLine();
+
+            if (operation.equals("C")) {
+                System.out.println("Digite o seu nome: ");
+                String name = scanner.nextLine();
+                Account account = YasmineBank.generateAccount(name);
+                YasmineBank.insertAccount(account);
+
+            }else if (operation.equals("E")) {
+                break;
+            } else {
+                System.out.println("Comando invalido, tente novamente.");
+            }
+        }
+
+        List<Account> accountList = YasmineBank.getAccounts();
+        for (Account cc : accountList) {
+            System.out.println(cc);
+        }
+        YasmineBank.outputTotal();
+
+    }
+    static void operateAccount(Account account) {
+        Scanner scanner = new Scanner(System.in);
 
         while (true) {
             System.out.println("Digite o código da operação desejada: " +
