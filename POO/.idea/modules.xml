@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FrameworkAPI/FrameworkAPI.iml" filepath="$PROJECT_DIR$/FrameworkAPI/FrameworkAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OOPJava-Basic/OOPJava-Basic.iml" filepath="$PROJECT_DIR$/OOPJava-Basic/OOPJava-Basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/POO.iml" filepath="$PROJECT_DIR$/POO.iml" />
       <module fileurl="file://$PROJECT_DIR$/ProjetoCurso/ProjetoCurso.iml" filepath="$PROJECT_DIR$/ProjetoCurso/ProjetoCurso.iml" />
     </modules>
